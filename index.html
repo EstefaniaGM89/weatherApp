@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- No he utilitzat Boostrap en aquest cas, només he retocat una mica el CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="weather-app">
+        <h1>Weather App</h1>
+        <div id="search_bar">
+            <input id="city_input" type="text" placeholder="Introdueix una ciutat...">
+            <button id="search_button">Consultar</button>
+        </div>
+        <div id="weather_messages" class="hidden"></div>
+        <!-- Activitat 1.5: Segueix estrictament el format d'exemple comentat dins del fitxer index.html. -->
+        <!-- He fet un contenidor buit que s'omplena dinàmicament, enlloc de inicialitzar l'HTML amb contingut fictici,
+        he enfocat l'exercici d'altre manera -->
+        <!-- En aquest cas ho he fet en castellà perquè la API no admet català com a paràmetre en la seva config lang -->
+        <div id="weather_info" class="hidden">
+            <h2 id="city_name"></h2>
+            <p id="temperature" class="temperature"></p>
+            <p id="weather_description" class="description"></p>
+            <div class="details">
+                <p>Humedad: <span id="humidity"></span>%</p>
+                <p>Velocidad del viento: <span id="wind_speed"></span> km/h</p>
+            </div>
+        </div>
+        <div id="forecast_messages" class="hidden"></div>
+        <div id="forecast" class="hidden">
+            <h3>Previsión de 3 dies</h3>
+            <div id="forecast_cards"></div>
+        </div>
+    </div>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>
+
+<!-- example of weather info and forecast
+        <div id="weather_info">
+          <h2 id="city_name">Barcelona</h2>
+          <p id="temperature" class="temperature">25°C</p>
+          <p id="weather_description" class="description">Ennuvolat</p>
+          <div class="details">
+            <p>Humitat: <span id="humidity">49</span>%</p>
+            <p>Velocitat del vent: <span id="wind_speed">16</span> km/h</p>
+          </div>
+        </div>
+        <div id="forecast">
+            <h3>Previsió de 3 dies</h3>
+            <div id="forecast_cards">
+                <div class="card">
+                    <p>Mon</p>
+                    <p>23°C</p>
+                    <span>☀</span>
+                </div>
+                <div class="card">
+                    <p>Tue</p>
+                    <p>26°C</p>
+                    <span>☁</span>
+                </div>
+                <div class="card">
+                    <p>Wed</p>
+                    <p>26°C</p>
+                    <span>🌧</span>
+                </div>
+            </div>
+        </div> -->
